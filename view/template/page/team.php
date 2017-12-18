@@ -10,7 +10,8 @@
     <?php foreach([
         ['jeremy-kauffman', 'alex-grintsvayg'],
         ['josh-finer', 'kay-kurokawa',],
-        ['jack-robison',  'alex-liebowitz', 'reilly-smith']
+        ['jack-robison',  'alex-liebowitz', 'reilly-smith'],
+        []
     ] as $bioRow): ?>
     <div class="row-fluid">
       <?php ++$rowCount ?>
