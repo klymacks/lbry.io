@@ -9,14 +9,14 @@
     <?php $rowCount = 0 ?>
     <?php foreach([
         ['jeremy-kauffman', 'alex-grintsvayg'],
-        ['josh-finer', 'kay-kurokawa',],
-        ['jack-robison',  'alex-liebowitz', 'reilly-smith'],
+        ['josh-finer', 'jack-robison', 'kay-kurokawa',],
+        [ 'alex-liebowitz', 'reilly-smith'],
         []
     ] as $bioRow): ?>
     <div class="row-fluid">
       <?php ++$rowCount ?>
       <?php foreach($bioRow as $bioSlug): ?>
-        <div class="<?php echo $rowCount <= 2 ? 'span6' : 'span4' ?> spacer2">
+        <div class="<?php echo count($bioRow) == 2 ? 'span6' : 'span4' ?> spacer2">
           <?php echo View::render('content/_bio', ['person' => $bioSlug]) ?>
         </div>
       <?php endforeach ?>
