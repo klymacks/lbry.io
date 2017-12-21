@@ -5,13 +5,16 @@
 <main>
   <div class="content photo-grid spacer2">
     <h1>{{page.team.header}}</h1>
+    
     <p>{{page.team.people}}</p>
     <?php $rowCount = 0 ?>
     <?php foreach([
         ['jeremy-kauffman', 'alex-grintsvayg'],
-        ['josh-finer', 'jack-robison', 'kay-kurokawa',],
-        [ 'alex-liebowitz', 'reilly-smith'],
-        []
+        ['jack-robinson', 'kay-kurokawa', 'bill-bittner',],
+        [ 'akinwale-ariwod', 'sean-yesmunt', 'liam-cardenas'],
+        [ 'josh-finer', 'reilly-smith', 'tom-zarebczan'],
+        ['natalie-mitchell', 'brinck-slattery'],
+        ['amit-tulshyan', 'igor-gassmann'],
     ] as $bioRow): ?>
     <div class="row-fluid">
       <?php ++$rowCount ?>
